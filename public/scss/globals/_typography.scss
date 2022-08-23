@@ -1,0 +1,13 @@
+@use 'colors' as c;
+
+h1,
+h2,
+h3{
+    margin-top: 0;
+    color: var(--primary-header);
+    font-size: 8rem;
+}
+
+a, a:visited , a:active{
+    text-decoration: none;
+}

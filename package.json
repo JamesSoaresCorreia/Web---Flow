@@ -1,0 +1,22 @@
+{
+  "name": "webandflow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesSoaresCorreia/Web---Flow.git"
+  },
+  "author": "james soares",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesSoaresCorreia/Web---Flow/issues"
+  },
+  "homepage": "https://github.com/JamesSoaresCorreia/Web---Flow#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
