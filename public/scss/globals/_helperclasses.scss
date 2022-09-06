@@ -1,0 +1,40 @@
+@use '../util/breakpoints' as bp;
+
+//Flex box classes
+.flex{
+    display: flex;
+
+    &-jc-sb{
+        justify-content: space-between;
+    }
+
+    &-jc-c{
+        justify-content: center;
+    }
+
+    &-jc-sa{
+        justify-content: space-around;
+    }
+
+    &-ai-c{
+        align-items: center;
+    }
+}
+
+.hide-for-mobile{
+
+    @include bp.breakpoint-below("medium"){
+        display: none !important;
+    }
+}
+
+.hide-for-desktop{
+
+    @include bp.breakpoint-above("large"){
+        display: none !important; 
+    }
+}
+
+.overflow-hidden{
+    overflow: hidden;
+}
