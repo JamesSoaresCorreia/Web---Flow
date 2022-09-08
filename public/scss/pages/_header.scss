@@ -3,16 +3,20 @@
 @use '../util/breakpoints' as bp;
 
 
-
+// All styles for the page header
 .header{
 
     padding: 0.9375rem;  
     max-height: 5.625rem;
     position: relative;
 
+    > nav{
+        min-height: 4.125rem;
+    }
+
     
 
-    &__menu{
+    &__menu{ //styles for hamburger
 
         > span{
             display: block;
@@ -53,7 +57,7 @@
 
     
 
-    &__linksMenu{
+    &__linksMenu{ // styles for mobile nav links
 
 
         position: absolute;
@@ -81,7 +85,7 @@
         
     }
 
-    &__largeLinksMenu{
+    &__largeLinksMenu{ //styles for desktop nav links
 
         
 

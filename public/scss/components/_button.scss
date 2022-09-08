@@ -7,11 +7,14 @@ button{
     background-image: linear-gradient(to right, var(--primary-grad-top), var(--primary-grad-bottom));
     padding: 0.5rem 1.6875rem;
     border-style: none;
-    border-radius: 18.7px;
+    border-radius: 35.88px;
     cursor: pointer;
     transition: all 200ms ease-in-out;
-    
-    
+       
+}
+
+.secondary{
+    background-image: linear-gradient(to right, var(--secondary-grad-top), var(--secondary-grad-bottom));
 }
 
 button:hover{

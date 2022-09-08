@@ -12,6 +12,7 @@
 :root {
   --font-public-sans: "Public-sans", sans-serif;
   --font-oswald: "Oswald", sans-serif;
+  --font-roboto: "Roboto", sans-serif;
 }
 
 html {
@@ -56,8 +57,14 @@ a, a:visited, a:active {
 .flex-ai-c {
   align-items: center;
 }
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
 
-@media (max-width: 63.99375em) {
+@media (max-width: 64.0375em) {
   .hide-for-mobile {
     display: none !important;
   }
@@ -81,9 +88,13 @@ button {
   background-image: linear-gradient(to right, var(--primary-grad-top), var(--primary-grad-bottom));
   padding: 0.5rem 1.6875rem;
   border-style: none;
-  border-radius: 18.7px;
+  border-radius: 35.88px;
   cursor: pointer;
   transition: all 200ms ease-in-out;
+}
+
+.secondary {
+  background-image: linear-gradient(to right, var(--secondary-grad-top), var(--secondary-grad-bottom));
 }
 
 button:hover {
@@ -95,6 +106,9 @@ button:hover {
   padding: 0.9375rem;
   max-height: 5.625rem;
   position: relative;
+}
+.header > nav {
+  min-height: 4.125rem;
 }
 .header__menu > span {
   display: block;
@@ -175,5 +189,107 @@ button:hover {
   }
   .header__largeLinksMenu > a:hover {
     opacity: 70%;
+  }
+}
+
+.hero {
+  position: relative;
+  z-index: -1;
+}
+.hero__container {
+  text-align: center;
+  width: 100%;
+  min-height: 16rem;
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-image: url("../../images/Hero Section bg 2.svg");
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+@media (min-width: 31.25em) {
+  .hero__container {
+    min-height: 28rem;
+  }
+}
+@media (min-width: 64em) {
+  .hero__container {
+    min-height: 40rem;
+    background-position: center center;
+  }
+}
+.hero__header {
+  font-family: "Oswald", sans-serif;
+  color: white;
+  font-size: 1.875rem;
+  line-height: 2rem;
+  font-weight: 500;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
+  max-width: 17rem;
+}
+@media (min-width: 31.25em) {
+  .hero__header {
+    font-size: 3.125rem;
+    max-width: 24rem;
+    line-height: 3rem;
+    margin-top: 0.75rem;
+  }
+}
+@media (min-width: 64em) {
+  .hero__header {
+    font-size: 4.5rem;
+    max-width: 34rem;
+    line-height: 4.75rem;
+    margin-top: 1.5rem;
+  }
+}
+.hero__tagline {
+  color: white;
+  line-height: 1.25rem;
+  font-size: 0.75rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  margin-top: 0.5rem;
+  margin-bottom: 3.5rem;
+}
+@media (min-width: 31.25em) {
+  .hero__tagline {
+    font-size: 1rem;
+    max-width: 34rem;
+    line-height: 1.5rem;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 64em) {
+  .hero__tagline {
+    font-size: 1.25rem;
+    max-width: 60rem;
+    line-height: 2rem;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.hero__button {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+@media (min-width: 31.25em) {
+  .hero__button {
+    bottom: 4rem;
+  }
+}
+@media (min-width: 64em) {
+  .hero__button {
+    bottom: 8rem;
+    height: 2.375rem;
+    width: 10.75rem;
   }
 }/*# sourceMappingURL=style.css.map */

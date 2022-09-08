@@ -19,11 +19,19 @@
     &-ai-c{
         align-items: center;
     }
+
+    &-row{
+        flex-direction: row;
+    }
+
+    &-col{
+        flex-direction: column;
+    }
 }
 
 .hide-for-mobile{
 
-    @include bp.breakpoint-below("medium"){
+    @include bp.breakpoint-below("large"){
         display: none !important;
     }
 }
