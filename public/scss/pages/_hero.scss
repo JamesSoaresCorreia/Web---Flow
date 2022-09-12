@@ -5,14 +5,14 @@
 .hero{
 
     position: relative;
-    z-index: -1;
+    
    
-
     &__container{
         
         text-align: center;
         width: 100%;
         min-height: 16rem;
+
         padding-top: 1rem;
         padding-left: 1rem;
         padding-right: 1rem;
@@ -35,7 +35,7 @@
             
     }
 
-    &__header{
+    &__header{ //styles for hero header
         font-family: f.$oswald;
         color: white;
         font-size: 1.875rem;
@@ -64,7 +64,7 @@
         } 
     }
 
-    &__tagline{
+    &__tagline{ //styles for hero tagline
         color: white;
         line-height: 1.25rem;
         font-size: 0.75rem;
@@ -98,21 +98,27 @@
         
     
 
-    &__button{
+    &__button{ //styles for hero button
 
         position: absolute;
         bottom: 0%;
         left: 50%;
         transform: translate(-50%, 0);
 
+        padding: 0.5rem 1rem;
+        font-size: 0.8rem;
+
+
         @include bp.breakpoint-above("medium"){
             bottom: 4rem;
+            font-size: 1rem;
         }
 
         @include bp.breakpoint-above("large"){
-            bottom: 8rem;
-            height: 2.375rem;
+            bottom: 5rem;
+            height: 3.5rem;
             width: 10.75rem;
+            font-size: 1.25rem;
         }
         
     }

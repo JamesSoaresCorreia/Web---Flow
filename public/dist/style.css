@@ -81,12 +81,12 @@ a, a:visited, a:active {
 }
 
 button {
-  font-family: var(--font-public-sans);
+  font-family: "Public Sans", sans-serif;
   font-weight: 400;
   font-size: 1.0125rem;
   color: white;
   background-image: linear-gradient(to right, var(--primary-grad-top), var(--primary-grad-bottom));
-  padding: 0.5rem 1.6875rem;
+  padding: 0.75rem 1.6875rem;
   border-style: none;
   border-radius: 35.88px;
   cursor: pointer;
@@ -99,7 +99,7 @@ button {
 
 button:hover {
   opacity: 80%;
-  scale: 1.02;
+  scale: 1.01;
 }
 
 .header {
@@ -133,6 +133,7 @@ button:hover {
 .header__linksMenu {
   position: absolute;
   display: none;
+  z-index: 100;
   left: 0;
   right: 0;
   top: 5.625rem;
@@ -194,7 +195,6 @@ button:hover {
 
 .hero {
   position: relative;
-  z-index: -1;
 }
 .hero__container {
   text-align: center;
@@ -280,16 +280,20 @@ button:hover {
   bottom: 0%;
   left: 50%;
   transform: translate(-50%, 0);
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
 }
 @media (min-width: 31.25em) {
   .hero__button {
     bottom: 4rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: 64em) {
   .hero__button {
-    bottom: 8rem;
-    height: 2.375rem;
+    bottom: 5rem;
+    height: 3.5rem;
     width: 10.75rem;
+    font-size: 1.25rem;
   }
 }/*# sourceMappingURL=style.css.map */

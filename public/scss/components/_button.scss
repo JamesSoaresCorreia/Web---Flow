@@ -1,11 +1,13 @@
+@use "../globals/fonts" as f;
+
 button{
 
-    font-family: var(--font-public-sans);
+    font-family: f.$public-sans;
     font-weight: 400;
     font-size: 1.0125rem;
     color: white;
     background-image: linear-gradient(to right, var(--primary-grad-top), var(--primary-grad-bottom));
-    padding: 0.5rem 1.6875rem;
+    padding: 0.75rem 1.6875rem;
     border-style: none;
     border-radius: 35.88px;
     cursor: pointer;
@@ -20,6 +22,6 @@ button{
 button:hover{
 
     opacity: 80%;
-    scale: 1.02;
+    scale: 1.01;
 
 }
