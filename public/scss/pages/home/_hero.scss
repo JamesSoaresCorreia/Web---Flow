@@ -1,6 +1,6 @@
-@use '../globals/colors';
-@use'../globals/fonts' as f;
-@use '../util/breakpoints' as bp;
+@use '../../globals/colors';
+@use'../../globals/fonts' as f;
+@use '../../util/breakpoints' as bp;
 
 .hero{
 
@@ -29,8 +29,16 @@
         
         @include bp.breakpoint-above("large"){
            
-            min-height: 40rem;
-            background-position: center center;
+            min-height: 42rem;
+            padding-top: 4rem;
+            background-position: bottom center;
+        } 
+
+        @include bp.breakpoint-above("xlarge"){
+           
+            min-height: 50rem;
+            padding-top: 2rem;
+            // background-position: bottom center;
         } 
             
     }
@@ -115,10 +123,15 @@
         }
 
         @include bp.breakpoint-above("large"){
-            bottom: 5rem;
+            bottom: 9rem;
             height: 3.5rem;
             width: 10.75rem;
             font-size: 1.25rem;
+        }
+
+        @include bp.breakpoint-above("xlarge"){
+            bottom: 14rem;
+            
         }
         
     }

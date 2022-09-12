@@ -94,8 +94,9 @@
 
             position: static;
             display: flex;
+            justify-content: space-between;
             flex-direction: row;
-            width: auto;
+            min-width: 45rem;
             height: auto;
             padding-top: 0%;
             padding-bottom: 0;
@@ -104,14 +105,15 @@
             > a{
                 color: var(--primary-header);
                 display: inline-block;
+                
                 font-weight: 200;
                 padding-top: 1.25rem;
                 font-family: var(--font-public-sans);
                 
-                font-size: 1.25rem;
+                font-size: 1.125rem;
                 &:not(:last-child){
                     margin-bottom: 0rem;
-                    margin-right: 6.375rem;
+                    margin-right: 4.375rem;
                 }
                 
                 transition:  opacity 200ms ease-in-out;

@@ -1,4 +1,5 @@
 @use 'colors' as c;
+@use 'fonts' as f;
 
 h1,
 h2,
@@ -10,4 +11,11 @@ h3{
 
 a, a:visited , a:active{
     text-decoration: none;
+}
+
+.section-header-primary{
+    font-family: f.$public-sans ;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
 }
