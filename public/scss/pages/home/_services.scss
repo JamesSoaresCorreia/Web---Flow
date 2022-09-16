@@ -6,6 +6,7 @@
 
     padding: 1rem;
     text-align: center;
+    margin-bottom: 2rem;
 
     @include bp.breakpoint-above('medium'){
         padding-left: 3.75rem;

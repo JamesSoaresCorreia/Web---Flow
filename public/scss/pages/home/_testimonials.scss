@@ -1,0 +1,40 @@
+@use '../../globals/colors';
+@use'../../globals/fonts' as f;
+@use '../../util/breakpoints' as bp;
+
+.testimonials{
+
+
+    &__wave{
+        width: 101%;
+        min-height:  28vw;
+        margin-bottom: -1px;
+        // margin-left: -1px;
+        // margin-left: -2px;
+        
+
+        background-image: url("../../../images/wave\ top.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom ;
+
+        @media screen and (min-width: 909px) {
+            background-size: cover;
+            background-position: top;
+            min-height: 28vw;
+            
+        }
+    }
+
+    .wave-bottom{
+        background-image: url("../../../images/wave\ bottom.svg");
+        background-position: top left;
+    }
+
+    &__content{
+
+        width: 100%;
+        height: 200px;
+        background-image: linear-gradient(90deg, #75D0DC 19.92%, #55BFCE 51.78%, #3CB2C3 76.56%);
+    }
+}
