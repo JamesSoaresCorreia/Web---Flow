@@ -1,5 +1,6 @@
 @use 'colors' as c;
 @use 'fonts' as f;
+@use '../util/breakpoints' as bp;
 
 h1,
 h2,
@@ -18,4 +19,60 @@ a, a:visited , a:active{
     font-weight: 500;
     font-size: 2rem;
     text-align: center;
+
+    @include bp.breakpoint-above('medium'){
+        font-size: 3rem;
+        
+    }
+}
+
+p{
+    line-height: 1.25rem;
+    font-size: 0.75rem;
+    font-family: f.$roboto;
+    font-weight: 400;
+
+    @include bp.breakpoint-above('medium'){
+        font-size: 1rem;
+        line-height: 1.5rem;
+        
+    }
+
+    @include bp.breakpoint-above('large'){
+        font-size: 1.25rem;
+        line-height: 1.85rem;
+        
+    }
+
+    
+}
+
+input::placeholder{
+    font-size: 0.7rem;
+    font-family: f.$roboto;
+    color: hsl(0, 0%, 0%, 0.45);
+
+    @include bp.breakpoint-above('medium'){
+        font-size: 0.8rem;   
+    }
+
+    @include bp.breakpoint-above('large'){
+        font-size: 1rem;
+        
+    }
+}
+
+textarea::placeholder{
+    font-size: 0.7rem;
+    font-family: f.$roboto;
+    color: hsl(0, 0%, 0%, 0.45);
+
+    @include bp.breakpoint-above('medium'){
+        font-size: 0.8rem;   
+    }
+
+    @include bp.breakpoint-above('large'){
+        font-size: 1rem;
+        
+    }
 }

@@ -10,21 +10,9 @@
 
     @include bp.breakpoint-above('medium'){
         padding-left: 3.75rem;
-        padding-left: 3.75rem;
+        padding-right: 3.75rem;
     }
 
-    &__header{
-
-        font-size: 2rem;
-
-        @include bp.breakpoint-above('medium'){
-            font-size: 3rem;
-            
-        }
-
-        
-    }
-    
 
     &__list{
         
