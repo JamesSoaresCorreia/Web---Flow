@@ -29,7 +29,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--font-public-sans);
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 ul {
@@ -500,7 +500,7 @@ button:hover {
 }
 
 .testimonials__wave {
-  width: 101%;
+  width: 100%;
   min-height: 28vw;
   margin-bottom: -1px;
   background-image: url("../../../images/wave top.svg");
