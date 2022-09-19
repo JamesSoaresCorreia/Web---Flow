@@ -10,6 +10,10 @@ app.get("/", function(req, res){
     res.render("pages/index");
 });
 
+app.get("/services" , (req,res) =>{
+    res.render("pages/services");
+})
+
 app.listen(process.env.PORT || 3000, function(){
     console.log("Server started at 3000");
 });
