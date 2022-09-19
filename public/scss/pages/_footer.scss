@@ -1,0 +1,99 @@
+@use '../globals/colors';
+@use'../globals/fonts' as f;
+@use '../util/breakpoints' as bp;
+
+.footer{
+
+    background-image: linear-gradient(90deg, #75D0DC 19.92%, #55BFCE 51.78%, #3CB2C3 76.56%);
+    width: 100%;
+    min-height: 11rem;
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+    position: relative;
+
+    &__logo{
+        >img{
+            height: 3.75rem;
+
+            @include bp.breakpoint-above('large'){
+                height: 5.375rem;
+            }
+
+        }
+        margin-right: 2rem;
+        
+    }
+
+    &__links-box{
+        flex-wrap: wrap;
+        flex-grow: 1;
+        max-width: 10rem;
+        align-content: flex-start;
+        justify-content: space-between;
+
+        @include bp.breakpoint-above('medium'){
+            flex-direction: row;
+            max-width: 70%;
+            justify-content: space-around;
+        }
+
+        
+    }
+
+    &__link{
+        font-family: f.$roboto;
+        color: white;
+        font-size: 1rem;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+
+        @include bp.breakpoint-above('large'){
+            font-size: 1.25rem;
+        }
+    }
+
+
+    &__social-link{
+        >img{
+            width: 2rem; 
+            margin-bottom: 0.5rem;
+            
+            @include bp.breakpoint-above('large'){
+                width: 2.5rem;
+            }
+        }
+
+    }
+
+    &__copyright{
+
+        font-weight: 100;
+        font-size: 0.75rem;
+        color: white;
+        margin-top: 0;
+        margin-bottom: 0;
+
+        position: absolute;
+        bottom:-2.75rem;
+        left: 1rem;
+
+        @include bp.breakpoint-above('medium'){
+            // left: 3.75rem;
+            bottom: -3.75rem;
+        }
+
+        @include bp.breakpoint-above('large'){
+            left: 3.75rem;
+            
+        }
+
+    }
+
+    &__container{
+        position: relative;
+    }
+
+
+
+
+}
