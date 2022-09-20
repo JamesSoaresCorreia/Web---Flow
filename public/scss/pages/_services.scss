@@ -1,6 +1,6 @@
-@use '../../globals/colors';
-@use'../../globals/fonts' as f;
-@use '../../util/breakpoints' as bp;
+@use '../globals/colors';
+@use'../globals/fonts' as f;
+@use '../util/breakpoints' as bp;
 
 .services{
 
@@ -80,4 +80,30 @@
 
 
     }
+    
+    
+}
+
+//Styles for the detailed services page
+
+.detailed{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+    padding: 0;
+    margin-top: 2.5rem;
+
+    @include bp.breakpoint-above('large'){
+        
+        grid-template-columns: 1fr 1fr;
+
+        margin-top: 4rem;
+    }
+}
+
+.intro-text{
+
+    margin-top: -3rem;
+    margin-bottom: 4rem;
 }
