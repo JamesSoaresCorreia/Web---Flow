@@ -1,0 +1,42 @@
+@use '../../globals/colors';
+@use'../../globals/fonts' as f;
+@use '../../util/breakpoints' as bp;
+
+.about{
+
+    text-align: center;
+    margin-top: -4rem;
+
+    &__name{
+        font-size: 1.75rem;
+        font-family: f.$oswald;
+
+        @include bp.breakpoint-above('medium'){
+            font-size: 2.5rem;
+        }
+
+        @include bp.breakpoint-above('large'){
+            font-size: 4rem;
+        }
+    }
+
+    &__picture{
+        width: 7.5rem;
+
+        @include bp.breakpoint-above('medium'){
+            width: 8.5rem;
+        }
+
+        @include bp.breakpoint-above('large'){
+            width: 13rem;
+        }
+    }
+
+    &__profile-box{
+        width: 50%;
+    }
+
+    &__content{
+        text-align: left;
+    }
+}

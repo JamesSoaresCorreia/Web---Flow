@@ -331,7 +331,7 @@ button:hover {
 .footer {
   background-image: linear-gradient(90deg, #75D0DC 19.92%, #55BFCE 51.78%, #3CB2C3 76.56%);
   width: 100%;
-  min-height: 10rem;
+  min-height: 1rem;
   padding-top: 2rem;
   padding-bottom: 4rem;
   position: relative;
@@ -731,4 +731,42 @@ button:hover {
   .cta textarea {
     width: 100%;
   }
+}
+
+.about {
+  text-align: center;
+  margin-top: -4rem;
+}
+.about__name {
+  font-size: 1.75rem;
+  font-family: "Oswald", sans-serif;
+}
+@media (min-width: 31.25em) {
+  .about__name {
+    font-size: 2.5rem;
+  }
+}
+@media (min-width: 63.94em) {
+  .about__name {
+    font-size: 4rem;
+  }
+}
+.about__picture {
+  width: 7.5rem;
+}
+@media (min-width: 31.25em) {
+  .about__picture {
+    width: 8.5rem;
+  }
+}
+@media (min-width: 63.94em) {
+  .about__picture {
+    width: 13rem;
+  }
+}
+.about__profile-box {
+  width: 50%;
+}
+.about__content {
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
