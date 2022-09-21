@@ -1,0 +1,105 @@
+@use '../../globals/colors';
+@use'../../globals/fonts' as f;
+@use '../../util/breakpoints' as bp;
+
+.ourWork{
+
+    padding: 3rem 0;
+    &__left-alligned-proof{
+
+        h3{
+            color: var(--secondary-header); 
+        }
+
+        button{
+            background-image: linear-gradient(to right, var(--secondary-grad-top), var(--secondary-grad-bottom));
+        }
+
+        margin-bottom: 3rem;
+
+        @include bp.breakpoint-above('medium'){
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+
+            img{
+                max-width: 50%;
+                min-width: 50%;
+            }
+
+        }
+
+    }
+
+    &__right-alligned-proof{
+        
+        h3{
+            color: var(--primary-header);
+            
+        }
+
+        @include bp.breakpoint-above('medium'){
+            display: flex;
+            flex-direction: row-reverse;
+            align-items: center;
+            padding-left: 3.75rem;
+            
+
+            img{
+                max-width: 50%;
+                min-width: 50%;
+            }
+
+        }
+    }
+
+    &__content{
+        text-align: center;
+        >p{
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+
+            @include bp.breakpoint-above('medium'){
+                margin-left: 0;
+            }
+        }
+
+        @include bp.breakpoint-above('medium'){
+            text-align: left;
+            max-width: 45rem;
+            margin-left: 0.5rem;
+        }
+        @include bp.breakpoint-above('large'){
+            margin-left: 1.5rem;
+        }
+    }
+
+    h3{
+        font-family: f.$public-sans;
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+
+        @include bp.breakpoint-above('medium'){
+            font-size: 2rem;
+        }
+        @include bp.breakpoint-above('large'){
+            font-size: 3rem;
+        }
+    }
+
+    img{
+        width: 100%;
+    }
+
+    button{
+        padding: 0.5rem 1.875rem;
+
+        @include bp.breakpoint-above('large'){
+            padding: 1rem 2rem;
+        }
+    }
+}

@@ -18,6 +18,11 @@ app.get("/about" , (req,res) =>{
     res.render("pages/about");
 })
 
+app.get("/ourwork", (req,res) =>{
+    res.render("pages/ourwork");
+}
+)
+
 app.listen(process.env.PORT || 3000, function(){
     console.log("Server started at 3000");
 });
